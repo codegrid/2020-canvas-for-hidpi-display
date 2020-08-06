@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      canvas, img{
+        margin: 10px;
+      }
+      .downloaded-image {
+        width: 160px;
+        height: 160px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>PixiJSバージョン</h1>
+    <div>
+      <h2>元のCanvas</h2>
+      <div class="original-canvas">
+        <canvas></canvas>
+      </div>
+    </div>
+    <div style="margin-topx:1000px">
+      <h2>上記から特定エリアを切り抜いたCanvas</h2>
+      <div class="trimmed-canvas">
+
+      </div>
+    </div>
+    <div>
+      <h2>上記Canvasの画像化</h2>
+      <div class="trimmed-image">
+      </div>
+    </div>
+    <div>
+      <h2>ダウンロード</h2>
+      <button class="download-btn">download</button>
+    </div>
+    <div>
+      <h2>ダウンロードした画像の表示</h2>
+      <img class="downloaded-image" src="canvas-to-image.png"/>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.3.0/pixi.min.js"></script>
+    <script src="pixijs-ver.js"></script>
+  </body>
+</html>
